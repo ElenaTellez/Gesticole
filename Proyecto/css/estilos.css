@@ -1,0 +1,540 @@
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Lobster);
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lobster', cursive; 
+    font-size: 18px;
+}
+
+
+a.scrollup
+	{
+		background: url("../img/icon_gototop.png") no-repeat scroll 0 0 transparent;
+		bottom: 20px;
+		display: none;
+		height: 40px;
+		position: fixed;
+		right: 20px;
+		text-indent: -9999px;
+		width: 40px;
+	}
+	
+	
+#contenedor_encabezado{
+    width: 1000px;
+    height: 206px;
+    padding-top:110px;
+}
+
+#encabezado{
+    overflow: hidden;
+    margin-left: 250px;  
+}
+
+#header {
+    width: 450px;
+    height: 150px;
+    background: #4da6ff;
+    border-radius:25px;
+    border-style: groove;
+    float: left;
+}
+
+#login {
+    width: 170px; 
+    text-align: center;
+    background: #4da6ff;
+    margin-top: 100px;
+    margin-left:1050px;
+    border-radius:25px;
+    border-style: groove; 
+    display:none; 
+    position: fixed; 
+}
+
+#flecha{
+    width: 40px;
+    height: 60px;
+    position: fixed;
+    margin-top: 25px;
+    margin-left: 0;
+    background-image: url("../img/flecha.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:none;
+}
+
+#x{ 
+    background-color: #4da6ff;
+    color:#ffffe6;   
+    text-decoration:none; 
+    border-radius: 25px;  
+    cursor: pointer;  
+    width: 25px;
+    height: 25px;
+    margin-left: 120px;
+}
+
+#formulario{
+  margin: 10px 0px 10px 10px
+}
+
+#contenedor {
+    width: 100%;
+    overflow: hidden;
+}
+#titulo {
+    margin:auto;
+    width: 40%;
+}
+
+.contenido.oculto {
+     display:none;
+}
+
+.contenido.mostrar {
+    display:inline;
+}
+
+.oculto {
+     display:none;
+}
+
+.mostrar {
+    display:inline;
+} 
+
+/*MEJORA PARA NAVEGADORES*/
+
+img {
+    float: left;
+    width: 20%;
+    max-width: 100%;
+    margin-top: 17px;
+    margin-left: 50px;
+    margin-right: 20px;
+    border-radius:25px;
+    box-shadow: -5px -5px 10px grey;
+    -webkit-box-shadow: -5px -5px 10px grey;
+    -moz-box-shadow: -5px -5px 10px grey;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    margin-left: -190px;
+    margin-top: -75px;
+    max-width: 50%; 
+    border-radius:25px; 
+    box-shadow: none;
+}
+
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 0px rgb(230,230,230),
+2px 2px 0px rgb(200,200,200),
+3px 3px 0px rgb(180,180,180),
+4px 4px 0px rgb(160,160,160),
+ 5px 5px 0px rgb(0,0,0), 8px 8px 20px rgb(0,0,0);
+}
+ 
+input {
+    border-radius: 25px; 
+	}
+
+#fijo{
+    height: 100px;
+    width: 1500px;
+    position: fixed; 
+    z-index: 100; 
+    background-color:orange;
+    margin-top:0;
+}    
+     
+
+#menu {
+    width: 1000px; 
+    margin-left:100px;  
+    margin-top: 30px;   
+}
+
+
+span {
+	background-image:url("../img/sprites.png"); 
+	/*background-repeat: no-repeat;no usar si son varios los sprites de una misma imagen*/ 
+	width: 30px;
+	height: 30px;
+	display: inline-block; /*Elemento funciona en linea y no da salto de linea*/
+	vertical-align:middle;
+	}
+
+#acceso {
+	background-position: -248px -243px;
+    border-radius:100px;    
+	}
+
+
+
+#menu ul {
+    list-style-type:none;
+    list-style-image:none;
+    display: flex;
+    flex-direction:row; /*por defecto es row horizontal y no column que es vertical*/	 
+}
+
+#menu ul li{
+    flex-grow: 1; /*separa los elementos de la lista*/
+}	
+
+#menu ul li a{
+    background-color: #4da6ff;
+    color:#ffffe6; 
+    display:block;/*este elemento se comporta en linea y quiero que lo haga en bloque para usar el ancho del contedor*/
+    margin-right:1px;
+    font-size:0.65em;
+    text-align:center;
+    text-decoration:none;
+    padding:0.4em; /*50% del tamaño del body*/
+    border-radius: 24px; 
+    border-style: groove;
+    cursor: pointer; 
+}
+
+div #menu ul li a:hover {
+    background-color:red;
+} 
+
+a:link {   
+    text-decoration:none;   
+} 
+
+.contenido{
+    display:block;
+    margin: auto auto 50px auto;
+    text-align: justify;
+    width: 1000px;
+    background: #4da6ff;
+    border-radius:25px;
+    border-style: groove;
+    padding: 30px 30px 50px 30px;
+}
+
+.boton {
+    background-color:rgb;
+    color: cornflowerblue;
+    text-shadow:1px 1px 1px black;
+}   
+
+/*CARRUSEL DE IMAGENES*/
+
+#galeria {
+    background-color: #e6e6e6;
+    border-radius:25px;
+    border-style: groove;
+    box-sizing: border-box;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    margin:auto;   
+}
+
+#portaFoto{
+    height: 250px;
+    width: 2500px;
+    background-color: blue;
+    top: -20px;
+    left:-10px;
+    position:relative;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-name: desplazarFoto;
+    animation-timing-function: linear;
+}
+
+@keyframes desplazarFoto {
+
+    from{
+        left:-200px;
+    } 
+    to{ 
+        left:-1200px;
+    }  
+}
+
+.foto1 {
+    height: 250px;
+    width: 200px;
+    position:relative;
+    float:left;
+    background-image: url("../img/niños.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;  
+}
+
+
+.foto2 {
+    height: 250px;
+    width: 200px;
+    position:relative;
+    float: left;
+    background-image: url("../img/HUERTO.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.foto3 {
+    height: 250px;
+    width: 200px;
+    position:relative;
+    float:left;  
+    background-image: url("../img/descarga.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.foto4 {
+    height: 250px;
+    width: 200px;
+    position:relative;
+    float:left;  
+    background-image: url("../img/agua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+.a { 
+  transform: rotateY(0deg) translateZ(250px);
+  background-image: url("../img/castillo2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;  
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px); 
+  background-image: url("../img/castillo3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover; 
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px);
+  background-image: url("../img/castillo2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover; 
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  background-image: url("../img/castillo3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  background-image: url("../img/castillo2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover; 
+} 
+.f {
+  transform: rotateY(300deg) translateZ(250px);
+  background-image: url("../img/castillo3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover
+}
+
+.next {
+  position: relative;
+  float:left;
+  color: #444;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s; 
+  width: 15px; 
+  margin-left: -260px;
+  margin-top: -50px;
+  height: 15px;
+}
+
+.prev {
+  position: relative;
+  float:left;
+  color: #444;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;  
+  width: 15px;
+  height: 15px;
+  margin-left: 425px;
+  margin-top: -50px;
+}
+
+#muestroFotos1{ 
+  margin: auto;  
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  background-image: url("../img/castillo3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;  
+  display:none;
+}
+
+#muestroFotos2{ 
+  margin: auto;  
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  padding-top: 5px;
+  background-image: url("../img/castillo2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;  
+  display:none;
+}
+
+
+@media screen and (max-width: 760px) { 
+  /* CSS para cuando el dispositivo es menor de 760 px */ 
+
+  #flecha{ 
+    display:inline;
+}
+    #menu ul {
+    list-style-type:none;
+    list-style-image:none;
+    flex-direction:column; /*por defecto es row horizontal y no column que es vertical*/
+    height: 50px;
+    width: 150px;	 
+    margin-top: 55px;
+    margin-left: -140px; 
+    position: fixed;  
+    display:none;
+}
+
+ 
+
+#fijo{
+    height: 0px;
+    width:  0px;
+    margin-top:0;
+    z-index: 1; 
+    background-color: transparent;
+    
+}  
+
+#login {
+    width: 170px; 
+    text-align: center;
+    background: #4da6ff;
+    margin-top: 300px;  
+    margin-left: 0px;
+    border-radius:25px;
+    border-style: groove;
+    position: fixed;  
+    display:none; 
+}
+
+img.logo{
+    display:none;
+}
+
+   #contenedor_encabezado{
+       display:none;
+   }
+  
+  div.contenido.flex-container { 
+    -webkit-flex-direction: column-reverse; 
+    -ms-flex-direction: column-reverse; 
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: nowrap; 
+    -ms-flex-wrap: nowrap; 
+    flex-wrap: nowrap;
+    -webkit-align-content: flex-start; 
+    -ms-flex-line-pack: start; 
+    align-content: flex-start;
+    -webkit-justify-content: space-between; 
+    -ms-flex-pack: justify; 
+    justify-content: space-between; 
+    box-sizing: border-box;  
+    flex-wrap: wrap;
+    -webkit-flex-direction: column; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+    -webkit-flex-wrap: wrap; 
+    -ms-flex-wrap: wrap; 
+    width: 90%;  
+    } 
+
+.next { 
+  margin-top: -80px; 
+  margin-left:  -150px;
+  width: 15px;
+}
+
+.prev {
+  
+ margin-top: -80px; 
+ margin-left: 250px;
+  width: 15px;
+}
+    
+ 
+} 
+
+@media screen and (max-width: 580px) { 
+
+    div.container.ocultoCarrusel{
+        display:none;
+    }  
+
+    #muestroFotos1{ 
+        display:block;
+    }
+
+      #muestroFotos2{ 
+        display:block;
+    }
+
+}    

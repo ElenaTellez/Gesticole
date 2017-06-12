@@ -1,0 +1,194 @@
+
+
+/*//////////////////////////botones/////////////////////////////////*/
+.botonPasarPagina{
+  color: #fff;
+  background-color: #5bc0de;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px hidden;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.botonVolver{
+  background-color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  position: relative;
+  left:20px;
+  margin-bottom: 20px;
+}
+.botonVolver a{
+  color: black;
+  text-decoration: none;
+}
+.botonVolver:hover{
+  text-decoration: none;
+  background-color: #e6e6e6;
+}
+/*///////////////////////carousel///////////////////////////////////*/
+@keyframes movimiento {
+	0%, 20%, 100% { 
+          opacity: 0; 
+        }
+	5%, 15% { 
+          opacity: 1;
+        }
+}
+.carousel{
+  background-color: white;
+  width: 70.3%;
+  height: 60%;
+  box-shadow: 5px 5px 5px #888888;
+  -webkit-box-shadow: 5px 5px 5px #888888;
+  -moz-box-shadow: 5px 5px 5px #888888;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  margin-left: -35%;
+  margin-bottom: 100px;
+  overflow: hidden;
+  z-index: -1;
+}
+.carousel .imagen {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  animation-name: movimiento;
+  animation-duration: 35s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.carousel .imagen:nth-child(2) {
+  animation-delay: 10s;
+}
+.carousel .imagen:nth-child(3) {
+  animation-delay: 20s;
+}
+.carousel .imagen:nth-child(4) {
+  animation-delay: 30s;
+}
+/*///////////////////////responsive/////////////////////////////////*/
+
+@media screen and (max-width:760px){
+  /*///////////////////////Nav responsive/////////////////////////////////*/
+    nav {
+      padding-top: 0px;
+      margin-top: 10px;
+      background-color: white;
+    }
+    nav ul {
+      height: auto;
+      width: 100%;
+    }
+ 
+    nav li + li {
+      margin-top: -10px;
+    }
+    
+    nav li {
+      width: 100%;
+      float: left;
+    }
+ 
+    nav li a {
+      text-align: left;
+      width: 100%;
+      display: block;
+      padding: 10px;
+    }
+    nav li a:hover{
+      text-decoration: none;
+      color: #333333;
+      background: none;
+    }
+ 
+    #botonMenu {  
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 5px;
+      display: block;
+    }
+    .menuBotonDerecha{
+      float: left;
+      text-align: center;
+      margin-top: -26px;
+      margin-right: 0px;
+      padding-bottom: 0px;
+    }
+    .menuBotonDerecha a{
+      text-indent: 10px;
+      margin-top: 10px;
+      padding: 10px 10px 10px 0px;
+      height: 0px;
+      width: 100%;
+    }
+    .menuBotonDerecha:hover {
+      background: none; 
+    }
+    
+    .menuBotonDerecha li ul, .menuBotonDerecha li:hover ul {
+      width: 150px;
+    }
+    
+    .menuBotonDerecha li ul{
+      position: relative;
+      top: 15px;
+      margin-left: 10px;
+      height: 30px;
+      width: 150px;
+    }
+    
+    .menuBotonDerecha ul li a{
+      padding: 0px 0px 0px 0px;
+      height: 30px;
+      width: 150px;
+      margin-top: -3px;
+      text-align: center;
+    }
+    #activate{
+      padding: 0px 0px;
+      margin: 0px 0px 10px 0px;
+    }
+    /*oculta y pone a la vista las botones del menu*/
+    .opcionesOcultas {
+      display: none;      
+    }
+    :checked ~ .opcionesOcultas {
+      display: block;
+    }
+    input.oculto[type=checkbox] {
+      display: none;
+    }
+  /*////////////////////////tabla responsive///////////////////////*/
+  table tr td{
+    white-space: nowrap;
+    padding: 0px 10px;
+  }
+  #desplazamientoTabla{
+    overflow-x: auto;
+  }
+  /*//////////////////////////Titulo 3D////////////////////////*/
+  #titulo3D{
+    font-size: 2.5em;
+  }
+  
+}
+/*///////////////////////////////////////////////////////////*/
+

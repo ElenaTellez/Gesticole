@@ -1,3 +1,4 @@
 # Gesticole
 
-Proyecto final CGSDAW
+Usuario: admin
+Contraseña: 123456
